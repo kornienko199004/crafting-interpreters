@@ -48,7 +48,6 @@ public class Lox {
     private static void run(String source) {
         Scanner scanner = new Scanner(source);
         List<Token> tokens = scanner.scanTokens();
-
         Parser parser = new Parser(tokens);
         List<Stmt> statements = parser.parse();
 
